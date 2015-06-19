@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1EAE43AD-3A2E-4388-AF3C-60221B889E69}</ProjectGuid>
+    <ProjectGuid>{D211C2BD-8000-4FD2-8562-2D5B8EABA9C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_16.BitExchangeAdvanced</RootNamespace>
-    <AssemblyName>16.BitExchangeAdvanced</AssemblyName>
+    <RootNamespace>_04MultiplicationSign</RootNamespace>
+    <AssemblyName>04MultiplicationSign</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitExchanageAdvanced.cs" />
+    <Compile Include="MultiplicationSign.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
