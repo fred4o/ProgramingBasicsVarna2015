@@ -18,15 +18,29 @@ namespace _06.LongestAreaInArray
         {
             int num;
             int.TryParse( Console.ReadLine() ,out num );
-            string[] arr = new string[num];
-            for (int i = 0; i < arr.Length; i++)
+            string[] strings = new string[num];
+            string lastString = "", longestString = "";
+            int longestSeq = 1, curerentSeq = 0;
+            for (int i = 0; i < strings.Length; i++)
             {
-                arr[i] = Console.ReadLine();
+                strings[i] = Console.ReadLine();
+                if (lastString==strings[i])
+                {
+                    curerentSeq++;
+                    longestSeq = curerentSeq;
+                    longestString = strings[i];
+                }
+                else
+                {
+                    curerentSeq = 1;
+                }
+                lastString = strings[i];
             }
 
-            foreach (var item in arr)
+            Console.WriteLine(longestSeq); ;
+            for (int i = 0; i < longestSeq; i++)
             {
-                string 
+                Console.WriteLine(longestString);
             }
         }
     }
