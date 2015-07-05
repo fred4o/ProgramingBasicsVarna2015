@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace _15.ExtractUrlsFromText
@@ -34,8 +35,8 @@ namespace _15.ExtractUrlsFromText
         }
         private static bool CheckForURL(string input)
         {
-            Uri uri = new Uri(input);
-            if (uri.IsAbsoluteUri)
+            Regex reg = new Regex(@"^www.|http(s)?://([\w-]+.)+[\w-]+(/[\w- ./?%&=])?$");
+            if (reg.IsMatch(input))
             {
                 return true;
             }
@@ -43,7 +44,7 @@ namespace _15.ExtractUrlsFromText
             {
                 return false;
             }
+        
         }
-    
     }
 }
